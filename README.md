@@ -6,3 +6,4 @@
 
 ### 目录
 1. [小程序🔥](README1.md)
+2. [吃透JavaScript的执行机制🔥](README2.md)

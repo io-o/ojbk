@@ -75,10 +75,12 @@ var alex = {
 };
 var alexChanged = change(alex);
 console.log(alex); // { name: 'Alex', age: 30 }
-console.log(alexChanged); // { name: 'Alex', age: 25 }```
+console.log(alexChanged); // { name: 'Alex', age: 25 }
+```
 
 ***
  > 实践出真知
+ 
 ```
 function changeAgeAndReference(person) {
     person.age = 25;
@@ -95,7 +97,6 @@ var personObj1 = {
 var personObj2 = changeAgeAndReference(personObj1);
 console.log(personObj1); // -> 输出?
 console.log(personObj2); // -> 输出?
-
 ```
 
 > 答案在个人网站

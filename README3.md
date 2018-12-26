@@ -94,7 +94,9 @@ var personObj1 = {
 };
 var personObj2 = changeAgeAndReference(personObj1);
 console.log(personObj1); // -> 输出?
-console.log(personObj2); // -> 输出?```
+console.log(personObj2); // -> 输出?
+
+```
 
 > 答案在个人网站
 

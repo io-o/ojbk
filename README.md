@@ -7,3 +7,4 @@
 ### 目录
 1. [小程序🔥](README1.md)
 2. [吃透JavaScript的执行机制🔥](README2.md)
+3. [吃透JavaScript的值传递和引用传递以及牵扯出深浅拷贝🔥](README2.md)

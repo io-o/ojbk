@@ -1,7 +1,7 @@
 ## vue 自定义指令
 
 > 全局注册自定义指令
-> https://cn.vuejs.org/v2/guide/custom-directive.html
+> [官网文档](https://cn.vuejs.org/v2/guide/custom-directive.html) 
 
 ```
 // 在main.js里全局注册 v-can指令，当页面里传的值为false，隐藏使用指定的DOM元素。

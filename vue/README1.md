@@ -20,4 +20,27 @@ Vue.directive('can', (el, binding) => {
 
 ```
 
+> 修饰符以及传参
+
+> arg：传给指令的参数，可选。例如 v-my-directive:foo 中，参数为 "foo"。
+> modifiers：一个包含修饰符的对象。例如：v-my-directive.foo.bar 中，修饰符对象为 { foo: true, bar: true }。
+
+```
+<button class="search-btn" v-can:hhh.bottom.top="false" @click="doSearch">搜索一下</button>
+```
+
+```
+Vue.directive('can', (el, binding) => {
+  // 获取修饰符
+  console.log(binding.modifiers)  // {bottom: true; top: true}
+  // 获取参数
+  console.log(binding.arg) // hhh
+  if (!binding.value) {
+    el.style.display = 'none'
+  }
+})
+
+
+```
+
 

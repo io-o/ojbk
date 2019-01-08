@@ -14,6 +14,7 @@
 
 ### Vue
 1. [vue自定义指令🔥](vue/README1.md)
+2. [vue混合mixins🔥](vue/README2.md)
 
 
 

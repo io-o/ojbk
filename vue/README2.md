@@ -7,6 +7,7 @@
 ```
 // 在src下新建mixins文件夹, 新建 index.js
 
+
 export const mixins = {
   data() {
     return {

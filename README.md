@@ -2,7 +2,7 @@
 ## 简介
 
 
-> 个人学习总结💣💣💣,  同步到个人网站   [ojbk](https://blog.ojbk.fun) 
+> 个人学习总结💣💣💣,  同步到个人网站   ~~[ojbk](https://blog.ojbk.fun)~~ *域名和服务器到期了，等待下一波活动🤣🤣🤣*
 
 
 ### Javascript

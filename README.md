@@ -10,6 +10,7 @@
 2. [吃透JavaScript的值传递和引用传递以及牵扯出深浅拷贝🔥](README3.md)
 3. [吃透JavaScript作用域与闭包🔥](README4.md)
 4. [吃透JavaScript的防抖🔥](README5.md)
+5. [吃透JavaScript的节流🔥](README6.md)
 
 
 

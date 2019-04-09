@@ -20,6 +20,7 @@
 2. [vue混合mixins🔥](vue/README2.md)
 3. [vue插槽slot🔥](vue/README3.md)
 4. [vue bus🔥](vue/README4.md)
+5. [vue 使用jsx🔥](vue/README5.md)
 
 
 

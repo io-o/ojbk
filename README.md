@@ -15,12 +15,21 @@
 
 
 
+
+
+
+### Leetcode
+1. [17. 电话号码的字母组合🔥](leetcode/README1.md)
+
+
+
 ### Vue
 1. [vue自定义指令🔥](vue/README1.md)
 2. [vue混合mixins🔥](vue/README2.md)
 3. [vue插槽slot🔥](vue/README3.md)
 4. [vue bus🔥](vue/README4.md)
 5. [vue 使用jsx🔥](vue/README5.md)
+6. [vue项目优化指南🔥](vue/README6.md)
 
 
 
@@ -35,11 +44,3 @@
 
 
 
-
-
-### TypeScript
-
-
-
-
-### React

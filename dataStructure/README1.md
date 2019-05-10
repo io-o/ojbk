@@ -26,6 +26,41 @@
   * 散列表和字典树 需要利用这些数据结构来可靠地执行。
 
 
+> 就效率而已：
+
+  * 链表是记录和存储数据的最佳选择
+  * 而哈希表和字典树 在搜索和检索数据方面效果最佳。
+  
+***
+
+### 堆栈： Stack
+
+> 堆栈是元素的集合，可以在顶部添加项目, 两个原则操作：push和pop。Push 将元素添加到数组的顶部，而Pop将它们从同一位置删除, 遵循"Last In，First Out"，即：LIFO，后进先出。
+
+```
+  class Stack {
+    constructor(...items) {
+      this.reverse = false
+      this.stack = [...items]
+    }
+
+    push(...items) {
+      return this.reverse
+        ? this.stack.unshift(...items)
+        : this.stack.push(...items)
+    }
+
+    pop() {
+      return this.reverse ? this.stack.shift() : this.stack.pop()
+    }
+  }
+  const stack = new Stack(4, 5)
+  stack.reverse = true
+  console.log(stack.push(1, 2, 3) === 5) // true
+  console.log(stack.stack ===[1, 2, 3, 4, 5]) // true
+
+```
+
 
 
 

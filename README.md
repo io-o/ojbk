@@ -32,6 +32,7 @@
 4. [vue bus🔥](vue/README4.md)
 5. [vue 使用jsx🔥](vue/README5.md)
 6. [vue项目优化指南🔥](vue/README6.md)
+7. [vue 实现跳转新窗口 打开图片🔥](vue/README7.md)
 
 
 

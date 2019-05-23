@@ -61,6 +61,31 @@
 
 ```
 
+### 队列： Queue
+> 在计算机科学中，一个队列(queue)是一种特殊类型的抽象数据类型或集合。集合中的实体按顺序保存。在前端开发中，最著名的队列使用当属浏览器/NodeJs中 关于宏任务与微任务，任务队列. 遵循"Fist In，first out"即：FIFO，先进先出。
+
+```
+class Queue {
+  constructor(...items) {
+    this.reverse = false
+    this.queue = [...items]
+  }
+
+  enqueue(...items) {
+    return this.reverse
+      ? this.queue.push(...items)
+      : this.queue.unshift(...items)
+  }
+
+  dequeue() {
+    return this.reverse ? this.queue.shift() : this.queue.pop()
+  }
+}
+
+
+```
+
+
 
 
 

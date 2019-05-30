@@ -12,6 +12,7 @@
 4. [吃透JavaScript-防抖🔥](README5.md)
 5. [吃透JavaScript-节流🔥](README6.md)
 6. [吃透JavaScript-数组去重🔥](README7.md)
+7. [吃透JavaScript-ES5实现map/filter/reduce🔥](README8.md)
 
 
 

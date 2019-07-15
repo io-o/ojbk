@@ -26,6 +26,7 @@
 1. [17. 电话号码的字母组合🔥](leetcode/1.md)
 2. [ 几道面试题🔥](leetcode/2.md)
 3. [ React面试题🔥](leetcode/3.md)
+4. [ 将数组扁平化并去除其中重复数据，最终得到一个升序且不重复的数组🔥](leetcode/4.md)
 
 ### Vue
 1. [vue自定义指令🔥](vue/README1.md)

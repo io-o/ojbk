@@ -29,6 +29,21 @@ function unique (arr) {
 
 ```
 
+### 使用filter
+
+```
+
+function unique (arr) {
+  let res = arr.filter((item, index, array) => {
+    return array.indexOf(item) === index
+  })
+  return res
+}
+
+
+```
+
+
 ### 使用键值对来判断
 
 ```
@@ -44,3 +59,5 @@ function unique (arr) {
 
 
 ```
+
+

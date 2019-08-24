@@ -39,6 +39,7 @@
 6. [vue项目优化指南🔥](vue/README6.md)
 7. [vue 实现跳转新窗口 打开图片🔥](vue/README7.md)
 8. [vue Keep-alive🔥](vue/README8.md)
+8. [vue 简单实现一个vue🔥](vue/mvvm.js)
 
 ### React
 1. [react组件通信🔥](react/1.md)

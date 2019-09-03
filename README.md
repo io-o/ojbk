@@ -50,6 +50,10 @@
 1. [小程序🔥](wxapp/README1.md)
 
 
+### git
+1. [git提交emoji🔥](git/1.md)
+
+
 ### CI/CD
 > 持续集成 / 持续交付
 ***

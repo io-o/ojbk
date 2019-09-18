@@ -30,7 +30,8 @@
 4. [ 将数组扁平化并去除其中重复数据，最终得到一个升序且不重复的数组🔥](leetcode/4.md)
 5. [ 两数之和🔥](leetcode/5.md)
 6. [ 删除数组指定元素🔥](leetcode/6.md)
-6. [155. 最小栈🔥](leetcode/7.md)
+7. [155. 最小栈🔥](leetcode/7.md)
+8. [682. 棒球比赛🔥](leetcode/8.md)
 
 ### Vue
 1. [vue自定义指令🔥](vue/README1.md)

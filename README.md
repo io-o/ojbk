@@ -32,6 +32,7 @@
 6. [ 删除数组指定元素🔥](leetcode/6.md)
 7. [155. 最小栈🔥](leetcode/7.md)
 8. [682. 棒球比赛🔥](leetcode/8.md)
+8. [队列🔥](leetcode/9.md)
 
 ### Vue
 1. [vue自定义指令🔥](vue/README1.md)

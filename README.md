@@ -15,6 +15,7 @@
 7. [吃透JavaScript-ES5实现map/filter/reduce🔥](README8.md)
 7. [吃透JavaScript-字符串🔥](README9.md)
 7. [吃透JavaScript-类型判断🔥](README10.md)
+7. [时间切片🔥](README11.md)
 
 
 

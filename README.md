@@ -36,6 +36,7 @@
 9. [队列🔥](leetcode/9.md)
 10. [二分查找🔥](leetcode/10.md)
 11. [快速排序🔥](leetcode/11.md)
+12. [349. 两个数组的交集🔥](leetcode/12.md)
 
 ### Vue
 1. [vue自定义指令🔥](vue/README1.md)

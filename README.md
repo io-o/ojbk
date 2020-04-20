@@ -60,6 +60,7 @@
 
 ### git
 1. [git提交emoji🔥](git/1.md)
+2. [git回滚🔥](git/2.md)
 
 
 ### CI/CD
@@ -70,5 +71,3 @@
 
 ### webgl
 1. [three🔥](wxapp/1.md)
-
-test

@@ -1,2 +1,4 @@
-*.html
+.DS_Store
+.idea
+.vscode
 *test

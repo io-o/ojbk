@@ -1,0 +1,143 @@
+<!--
+ * @Author: Andrew Q
+ * @Date: 2022-03-13 18:15:34
+ * @LastEditors: Andrew Q
+ * @LastEditTime: 2022-03-13 18:22:13
+ * @Description: 观察者模式
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      .active {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h3>常规代码</h3></header>
+
+    <input type="text" />
+    <footer>
+      <div class="box" id="a">A</div>
+      <div class="box" id="b">B</div>
+      <!-- 新增需求检查是否包含数字 -->
+      <div class="box" id="c">包含数字</div>
+    </footer>
+
+    <!-- 观察者模式 -->
+    <header><h3>观察者模式</h3></header>
+    <input type="text" id="inputSub" />
+    <div class="boxs"></div>
+  </body>
+</html>
+
+<script>
+  // 未使用设计模式 每增加一个需求就要修改 checkActive函数
+  // 违背面向对象的开闭原则  - 软件中的对象（类，模块，函数等等）应该对于扩展是开放的，但是对于修改是封闭的
+  document
+    .querySelector('input')
+    .addEventListener('input', checkActive)
+
+  function checkActive() {
+    document
+      .querySelector('#a')
+      .classList.toggle('active', this.value.includes('a'))
+    document
+      .querySelector('#b')
+      .classList.toggle('active', this.value.includes('b'))
+
+    // 新增代码
+    document
+      .querySelector('#c')
+      .classList.toggle('active', /\d/.test(this.value))
+  }
+</script>
+
+<script>
+  // 使用设计模式- 观察者模式  重构
+
+  class Subject {
+    constructor(el) {
+      this.observers = []
+
+      // 监听input事件
+      el.addEventListener('input', (e) =>
+        this.notifyAll(e.target.value)
+      )
+    }
+
+    // 添加观察者
+    add(observer) {
+      this.observers.push(observer)
+    }
+
+    // 通知观察者
+    notifyAll(value) {
+      this.observers.forEach((ob) => ob.notify(value))
+    }
+  }
+
+  // 观察者基类
+  class OBserver extends DocumentFragment {
+    constructor(txt) {
+      super()
+
+      this.createDiv(txt)
+    }
+
+    createDiv(txt) {
+      this.div = document.createElement('div')
+      this.div.innerText = txt
+      this.div.className = 'box'
+
+      document.querySelector('.boxs').appendChild(this.div)
+    }
+
+    // 执行具体方法
+    notify(value) {
+      this.div.classList.toggle('active', this.handel(value))
+    }
+  }
+
+  // 检查是否包含字母子类
+  class DefaultObserver extends OBserver {
+    constructor(txt) {
+      super(txt)
+      this.txt = txt
+    }
+
+    handel(value) {
+      return value.includes(this.txt)
+    }
+  }
+
+  const sub = new Subject(document.querySelector('#inputSub'))
+
+  sub.add(new DefaultObserver('A'))
+  sub.add(new DefaultObserver('B'))
+
+  // 新增需求检查是否包含数字
+  // 1 新增包含数字子类不需要修改原代码 符合扩展开放原则 完全解耦
+  // 2 调用
+
+  class NumberObserver extends OBserver {
+    constructor(txt) {
+      super(txt)
+      this.txt = txt
+    }
+
+    handel(value) {
+      return /\d/.test(value)
+    }
+  }
+
+  sub.add(new NumberObserver('包含数字'))
+</script>
